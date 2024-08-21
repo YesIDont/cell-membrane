@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        line-height: 100%;
+      }
+      body,
+      canvas {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+      #info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+      #info p:not(:last-child) {
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="info">
+      <p>CLICK TO DRAW A CIRCLE</p>
+      <p>HOLD MOUSE AND DRAG TO MAKE IT BIGGER</p>
+      <p>RIGHT CLICK TO REMOVE CIRCLE</p>
+    </div>
+    <canvas id="canvas"></canvas>
+    <script src="index.js"></script>
+  </body>
+</html>
